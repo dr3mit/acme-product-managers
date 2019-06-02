@@ -1,17 +1,17 @@
 const path = require('path');
 const express = require('express');
-const volleyball = require('volleyball');
+//const volleyball = require('volleyball');
 const morgan = require('morgan');
 const app = express();
 module.exports = app;
 
 app.use(morgan('dev'));
-app.use(volleyball)
+//app.use(volleyball)
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-//app.use(express.static(path.join(__dirname, '..', 'public')))
-//app.use(express.static(path.join(__dirname, '..', 'node_modules', 'font-awesome', 'css')))
-//app.use('/fonts', express.static(path.join(__dirname, '..', 'node_modules', 'font-awesome', 'fonts')))
+app.use(express.static(path.join(__dirname, '..', 'public')))
+app.use(express.static(path.join(__dirname, '..', 'node_modules', 'font-awesome', 'css')))
+app.use('/fonts', express.static(path.join(__dirname, '..', 'node_modules', 'font-awesome', 'fonts')))
 app.use('/api', require('./api'))
 
 app.use((req, res, next) => {

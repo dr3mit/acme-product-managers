@@ -14,7 +14,7 @@ router.get('/products', (req, res, next) => {
 });
 
 router.get('/products/:id', (req, res, next) => {
-    return Product.findByPk(Number(req.params.id), {include: User})
+    return Product.findByPk(Number(req.params.id))//, {include: User})
     .then(product => res.send(product))
     .catch(e => console.error(e));
 });
