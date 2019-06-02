@@ -18,6 +18,8 @@ class Products extends React.Component {
     }
 
     render() {
-        return <div>Products: {this.state.products}</div>;
+        return (<div>
+            <div className="Products">Products: {this.state.products}</div>
+        </div>)
     }
 } 

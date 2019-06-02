@@ -21,7 +21,6 @@ app.use((req, res, next) => {
 });
   
 app.get('/', (req, res, next) => {
-    //res.send('Hello')
     res.sendFile(path.join(__dirname, '..', 'client', 'index.html'))
 });
 

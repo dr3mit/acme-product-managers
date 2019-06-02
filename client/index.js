@@ -5,6 +5,7 @@ import Nav from './Nav'
 import Product from './Product'
 import Products from './Products'
 import ReactDOM from 'react-dom'
+//import Babel from 'babel-cli';
 
 
 ReactDOM.render(
@@ -17,5 +18,7 @@ ReactDOM.render(
     </div>,
     document.getElementById('app')
 );
+
+export default ReactDOM;
 
 

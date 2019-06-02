@@ -10,6 +10,8 @@ class Nav extends React.Component {
     }
 
     render() {
-        return <div>Nav</div>
+        return (<div>
+            <div className="Nav">Nav</div>
+            </div>)
     }
 } 

@@ -17,7 +17,9 @@ class Product extends React.Component {
     }
 
     render() {
-        return <div>Product: {this.state.product}</div>
+        return (<div>
+        <div className="Product">Product: {this.state.product}</div>
+        </div>)
     }
 } 
 

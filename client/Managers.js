@@ -17,6 +17,8 @@ class Manager extends React.Component {
     }
 
     render() {
-        return <div>Managers: {this.state.curManagers}</div> 
+        return (<div>
+            <div className="Manager">Managers: {this.state.curManagers}</div>
+            </div>)
     }
 } 
