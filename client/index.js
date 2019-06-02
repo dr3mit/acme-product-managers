@@ -19,6 +19,6 @@ ReactDOM.render(
     document.getElementById('app')
 );
 
-export default ReactDOM;
+
 
 

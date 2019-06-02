@@ -15,3 +15,5 @@ class Nav extends React.Component {
             </div>)
     }
 } 
+
+export default Nav;

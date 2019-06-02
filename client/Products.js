@@ -23,3 +23,5 @@ class Products extends React.Component {
         </div>)
     }
 } 
+
+export default Products;
