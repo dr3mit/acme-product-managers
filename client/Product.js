@@ -9,6 +9,10 @@ class Product extends React.Component {
         }
     }
 
+    setManager(manager) {
+        this.setState({product: manager.belongsTo(this.state.product)});
+    }
+
     componentDidMount() {
         Axios.get('api/products/:id')
         .then((products) => {
