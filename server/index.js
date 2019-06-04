@@ -13,11 +13,8 @@ app.use('/fonts', express.static(path.join(__dirname, '..', 'node_modules', 'fon
 app.use('/api', require('./api'))
 
 app.use((req, res, next) => {
-    if (path.extname(req.path).length > 0) {
-      res.status(404).end()
-    } else {
-      next()
-    }
+    if (path.extname(req.path).length < 0) next();
+    else res.status(404).end();
 });
   
 app.get('/', (req, res, next) => {

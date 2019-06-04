@@ -1,5 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
+import Sequelize from 'sequelize';
 
 class Product extends React.Component {
     constructor (props) {
